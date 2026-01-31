@@ -1,5 +1,5 @@
-import { ComprasModule } from "@/components/templates";
+import { ComprasOrganism } from "./components/organism/ComprasOrganism";
 
 export default function ComprasPage() {
-  return <ComprasModule />;
+  return <ComprasOrganism />;
 }
