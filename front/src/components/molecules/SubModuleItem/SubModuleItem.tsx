@@ -39,7 +39,7 @@ export function SubModuleItem({ subModule }: SubModuleItemProps) {
         <Icon
           name="chevron-right"
           size="sm"
-          className="text-slate-300 dark:text-slate-600 group-hover:text-slate-500 dark:group-hover:text-slate-400 transition-colors flex-shrink-0"
+          className="text-slate-300 dark:text-slate-600 group-hover:text-slate-500 dark:group-hover:text-slate-400 transition-colors shrink-0"
         />
       </Link>
     );
@@ -64,7 +64,7 @@ export function SubModuleItem({ subModule }: SubModuleItemProps) {
       <Icon
         name="chevron-right"
         size="sm"
-        className="text-slate-300 dark:text-slate-600 group-hover:text-slate-500 dark:group-hover:text-slate-400 transition-colors flex-shrink-0"
+        className="text-slate-300 dark:text-slate-600 group-hover:text-slate-500 dark:group-hover:text-slate-400 transition-colors shrink-0"
       />
     </button>
   );
