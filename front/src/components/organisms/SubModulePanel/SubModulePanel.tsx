@@ -2,6 +2,7 @@
 
 import { Icon, Title, Text } from "@/components/atoms";
 import { SubModuleItem } from "@/components/molecules";
+import { useI18n } from "@/i18n";
 import type { Module } from "@/test/modules.data";
 
 interface SubModulePanelProps {
@@ -10,6 +11,12 @@ interface SubModulePanelProps {
 }
 
 export function SubModulePanel({ module, onBack }: SubModulePanelProps) {
+  const { t } = useI18n();
+
+  // Get translated name and description based on module id
+  const moduleName = t(`modules.${module.id}` as any) || module.name;
+  const moduleDesc = t(`modules.${module.id}.desc` as any) || module.description;
+
   return (
     <div className="animate-in">
       <button
@@ -17,7 +24,7 @@ export function SubModulePanel({ module, onBack }: SubModulePanelProps) {
         className="inline-flex items-center gap-2 mb-6 px-3 py-1.5 text-sm text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-md transition-colors"
       >
         <Icon name="chevron-left" size="sm" />
-        <span>Volver</span>
+        <span>{t("submodule.back")}</span>
       </button>
 
       <div className="flex items-center gap-4 mb-6 pb-6 border-b border-slate-200 dark:border-slate-700">
@@ -26,15 +33,15 @@ export function SubModulePanel({ module, onBack }: SubModulePanelProps) {
         </div>
         <div>
           <Title level={2} className="text-slate-900 dark:text-slate-100">
-            {module.name}
+            {moduleName}
           </Title>
-          <Text variant="muted">{module.description}</Text>
+          <Text variant="muted">{moduleDesc}</Text>
         </div>
       </div>
 
       <div className="mb-4">
         <Text variant="small" className="uppercase tracking-wider font-medium text-slate-500 dark:text-slate-400">
-          Funciones del módulo
+          {t("submodule.functions")}
         </Text>
       </div>
 

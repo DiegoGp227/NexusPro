@@ -135,7 +135,7 @@ export function NewPurchaseOrderModal({ onClose, onSubmit }: NewPurchaseOrderMod
                 setSelectedProveedor(prov || null);
                 setOrderItems([]);
               }}
-              className="w-full px-4 py-2.5 text-sm bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 text-slate-900 dark:text-white"
+              className="w-full px-4 py-2.5 text-sm bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 text-slate-900 dark:text-white [&>option]:bg-white [&>option]:dark:bg-slate-900 [&>option]:text-slate-900 [&>option]:dark:text-white"
             >
               <option value="">{t("purchaseOrder.selectSupplier")}</option>
               {activeProveedores.map((p) => (
@@ -156,7 +156,7 @@ export function NewPurchaseOrderModal({ onClose, onSubmit }: NewPurchaseOrderMod
                 <select
                   value={selectedProducto}
                   onChange={(e) => setSelectedProducto(e.target.value)}
-                  className="flex-1 px-4 py-2.5 text-sm bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 text-slate-900 dark:text-white"
+                  className="flex-1 px-4 py-2.5 text-sm bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 text-slate-900 dark:text-white [&>option]:bg-white [&>option]:dark:bg-slate-900 [&>option]:text-slate-900 [&>option]:dark:text-white"
                 >
                   <option value="">{t("purchaseOrder.selectProduct")}</option>
                   {availableProducts.map((p) => (

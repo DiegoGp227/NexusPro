@@ -404,8 +404,154 @@ public class DataSeeder {
             prod8.setStockMinimo(40);
             prod8.setProveedor(prov5);
 
+            // Productos para prov6 - Tornillos y Fijaciones Express
+            Producto prod9 = new Producto();
+            prod9.setCodigo("FER-001");
+            prod9.setNombre("Tornillos Galvanizados 1/4");
+            prod9.setDescripcion("Tornillos galvanizados cabeza hexagonal 1/4 x 1 pulgada");
+            prod9.setCategoria("Ferretería");
+            prod9.setUnidad("Caja (500 pzas)");
+            prod9.setPrecioUnitario(new BigDecimal("280.00"));
+            prod9.setStock(200);
+            prod9.setStockMinimo(50);
+            prod9.setProveedor(prov6);
+
+            // Productos para prov7 - Distribuidora de Materiales CDMX
+            Producto prod10 = new Producto();
+            prod10.setCodigo("MAT-003");
+            prod10.setNombre("Varilla Corrugada 3/8");
+            prod10.setDescripcion("Varilla de acero corrugada 3/8 pulgada, 12 metros");
+            prod10.setCategoria("Materiales");
+            prod10.setUnidad("Pieza");
+            prod10.setPrecioUnitario(new BigDecimal("185.00"));
+            prod10.setStock(500);
+            prod10.setStockMinimo(100);
+            prod10.setProveedor(prov7);
+
+            // Productos para prov8 - CompuMayor México
+            Producto prod11 = new Producto();
+            prod11.setCodigo("TEC-001");
+            prod11.setNombre("Mouse Inalámbrico Logitech M720");
+            prod11.setDescripcion("Mouse ergonómico inalámbrico, multi-dispositivo, batería 24 meses");
+            prod11.setCategoria("Tecnología");
+            prod11.setUnidad("Pieza");
+            prod11.setPrecioUnitario(new BigDecimal("890.00"));
+            prod11.setStock(150);
+            prod11.setStockMinimo(30);
+            prod11.setProveedor(prov8);
+
+            // Productos para prov9 - Soluciones IT Empresarial
+            Producto prod12 = new Producto();
+            prod12.setCodigo("TEC-002");
+            prod12.setNombre("Docking Station USB-C");
+            prod12.setDescripcion("Docking station universal USB-C, 3 monitores, 100W PD");
+            prod12.setCategoria("Tecnología");
+            prod12.setUnidad("Pieza");
+            prod12.setPrecioUnitario(new BigDecimal("3200.00"));
+            prod12.setStock(45);
+            prod12.setStockMinimo(10);
+            prod12.setProveedor(prov9);
+
+            // Productos para prov10 - Laptops Corporativas MX
+            Producto prod13 = new Producto();
+            prod13.setCodigo("TEC-003");
+            prod13.setNombre("Laptop Lenovo ThinkPad E14");
+            prod13.setDescripcion("Laptop empresarial i7, 16GB RAM, 512GB SSD, Windows 11 Pro");
+            prod13.setCategoria("Tecnología");
+            prod13.setUnidad("Pieza");
+            prod13.setPrecioUnitario(new BigDecimal("21500.00"));
+            prod13.setStock(35);
+            prod13.setStockMinimo(10);
+            prod13.setProveedor(prov10);
+
+            // Productos para prov11 - TechStore Empresas
+            Producto prod14 = new Producto();
+            prod14.setCodigo("TEC-004");
+            prod14.setNombre("Teclado Mecánico Logitech MX");
+            prod14.setDescripcion("Teclado mecánico inalámbrico, retroiluminado, recargable");
+            prod14.setCategoria("Tecnología");
+            prod14.setUnidad("Pieza");
+            prod14.setPrecioUnitario(new BigDecimal("2450.00"));
+            prod14.setStock(80);
+            prod14.setStockMinimo(20);
+            prod14.setProveedor(prov11);
+
+            // Productos para prov12 - Digital Business Solutions
+            Producto prod15 = new Producto();
+            prod15.setCodigo("TEC-005");
+            prod15.setNombre("Webcam Logitech Brio 4K");
+            prod15.setDescripcion("Cámara web 4K HDR, micrófono integrado, corrección de luz");
+            prod15.setCategoria("Tecnología");
+            prod15.setUnidad("Pieza");
+            prod15.setPrecioUnitario(new BigDecimal("3800.00"));
+            prod15.setStock(60);
+            prod15.setStockMinimo(15);
+            prod15.setProveedor(prov12);
+
+            // Productos para prov13 - Papelería Corporativa SA
+            Producto prod16 = new Producto();
+            prod16.setCodigo("OFI-003");
+            prod16.setNombre("Carpeta Ejecutiva Piel");
+            prod16.setDescripcion("Carpeta ejecutiva de piel sintética con bloc y calculadora");
+            prod16.setCategoria("Oficina");
+            prod16.setUnidad("Pieza");
+            prod16.setPrecioUnitario(new BigDecimal("450.00"));
+            prod16.setStock(100);
+            prod16.setStockMinimo(25);
+            prod16.setProveedor(prov13);
+
+            // Productos para prov14 - Mayoreo Oficina Plus
+            Producto prod17 = new Producto();
+            prod17.setCodigo("OFI-004");
+            prod17.setNombre("Folders Manila Carta");
+            prod17.setDescripcion("Paquete de 100 folders tamaño carta, color manila");
+            prod17.setCategoria("Oficina");
+            prod17.setUnidad("Paquete");
+            prod17.setPrecioUnitario(new BigDecimal("120.00"));
+            prod17.setStock(300);
+            prod17.setStockMinimo(50);
+            prod17.setProveedor(prov14);
+
+            // Productos para prov15 - Office Depot Empresarial
+            Producto prod18 = new Producto();
+            prod18.setCodigo("OFI-005");
+            prod18.setNombre("Silla Ejecutiva Ergonómica");
+            prod18.setDescripcion("Silla de oficina con soporte lumbar, brazos ajustables");
+            prod18.setCategoria("Mobiliario");
+            prod18.setUnidad("Pieza");
+            prod18.setPrecioUnitario(new BigDecimal("4500.00"));
+            prod18.setStock(40);
+            prod18.setStockMinimo(10);
+            prod18.setProveedor(prov15);
+
+            // Productos para prov16 - Distribuidora de Papel del Norte
+            Producto prod19 = new Producto();
+            prod19.setCodigo("OFI-006");
+            prod19.setNombre("Papel Bond Oficio");
+            prod19.setDescripcion("Resma de papel bond tamaño oficio 75g, 500 hojas");
+            prod19.setCategoria("Oficina");
+            prod19.setUnidad("Resma");
+            prod19.setPrecioUnitario(new BigDecimal("115.00"));
+            prod19.setStock(400);
+            prod19.setStockMinimo(100);
+            prod19.setProveedor(prov16);
+
+            // Productos para prov17 - Papelera del Bajío
+            Producto prod20 = new Producto();
+            prod20.setCodigo("OFI-007");
+            prod20.setNombre("Libretas Profesionales Pack");
+            prod20.setDescripcion("Pack de 5 libretas profesionales pasta dura, 100 hojas c/u");
+            prod20.setCategoria("Oficina");
+            prod20.setUnidad("Pack");
+            prod20.setPrecioUnitario(new BigDecimal("185.00"));
+            prod20.setStock(150);
+            prod20.setStockMinimo(30);
+            prod20.setProveedor(prov17);
+
             List<Producto> productos = productoRepo.saveAll(
-                Arrays.asList(prod1, prod2, prod3, prod4, prod5, prod6, prod7, prod8));
+                Arrays.asList(prod1, prod2, prod3, prod4, prod5, prod6, prod7, prod8,
+                              prod9, prod10, prod11, prod12, prod13, prod14, prod15,
+                              prod16, prod17, prod18, prod19, prod20));
             System.out.println(">>> " + productos.size() + " productos creados");
 
             // ==================== SUPPLIER QUOTES (ProveedorProducto) ====================

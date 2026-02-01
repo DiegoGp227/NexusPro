@@ -1,6 +1,7 @@
 "use client";
 
 import { Icon, Title, Text } from "@/components/atoms";
+import { useI18n } from "@/i18n";
 import type { Module } from "@/test/modules.data";
 
 interface ModuleCardProps {
@@ -9,6 +10,12 @@ interface ModuleCardProps {
 }
 
 export function ModuleCard({ module, onClick }: ModuleCardProps) {
+  const { t } = useI18n();
+
+  // Get translated name and description based on module id
+  const moduleName = t(`modules.${module.id}` as any) || module.name;
+  const moduleDesc = t(`modules.${module.id}.desc` as any) || module.description;
+
   return (
     <button
       onClick={() => onClick(module)}
@@ -20,7 +27,7 @@ export function ModuleCard({ module, onClick }: ModuleCardProps) {
         </div>
         <div className="flex-1 min-w-0">
           <Title level={4} className="text-slate-900 dark:text-slate-100 truncate">
-            {module.name}
+            {moduleName}
           </Title>
         </div>
         <Icon
@@ -30,11 +37,11 @@ export function ModuleCard({ module, onClick }: ModuleCardProps) {
         />
       </div>
       <Text variant="muted" className="line-clamp-2">
-        {module.description}
+        {moduleDesc}
       </Text>
       <div className="mt-3 pt-3 border-t border-slate-100 dark:border-slate-700">
         <Text variant="small">
-          {module.subModules.length} funciones disponibles
+          {module.subModules.length} {t("dashboard.functionsAvailable")}
         </Text>
       </div>
     </button>

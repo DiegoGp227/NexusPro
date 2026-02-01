@@ -203,6 +203,54 @@ export const translations = {
     "submodule.back": "Volver",
     "submodule.functions": "Funciones del módulo",
 
+    // SubModules - Ventas
+    "submodules.facturas": "Facturas",
+    "submodules.facturas.desc": "Crear y gestionar facturas",
+    "submodules.clientes": "Clientes",
+    "submodules.clientes.desc": "Gestión de clientes",
+    "submodules.cotizaciones": "Cotizaciones",
+    "submodules.cotizaciones.desc": "Crear cotizaciones",
+
+    // SubModules - Inventario
+    "submodules.productos": "Productos",
+    "submodules.productos.desc": "Catálogo de productos",
+    "submodules.movimientos": "Movimientos",
+    "submodules.movimientos.desc": "Entradas y salidas",
+    "submodules.almacenes": "Almacenes",
+    "submodules.almacenes.desc": "Gestión de almacenes",
+
+    // SubModules - Contabilidad
+    "submodules.libro-diario": "Libro Diario",
+    "submodules.libro-diario.desc": "Registros contables",
+    "submodules.cuentas": "Plan de Cuentas",
+    "submodules.cuentas.desc": "Catálogo de cuentas",
+    "submodules.reportes": "Reportes",
+    "submodules.reportes.desc": "Reportes financieros",
+
+    // SubModules - RRHH
+    "submodules.empleados": "Empleados",
+    "submodules.empleados.desc": "Directorio de empleados",
+    "submodules.nomina": "Nómina",
+    "submodules.nomina.desc": "Gestión de nómina",
+    "submodules.asistencia": "Asistencia",
+    "submodules.asistencia.desc": "Control de asistencia",
+
+    // SubModules - Compras
+    "submodules.proveedores": "Proveedores",
+    "submodules.proveedores.desc": "Gestión de proveedores",
+    "submodules.ordenes": "Órdenes de Compra",
+    "submodules.ordenes.desc": "Crear órdenes de compra",
+    "submodules.recepciones": "Recepciones",
+    "submodules.recepciones.desc": "Recepción de mercancía",
+
+    // SubModules - Configuración
+    "submodules.usuarios": "Usuarios",
+    "submodules.usuarios.desc": "Gestión de usuarios",
+    "submodules.roles": "Roles y Permisos",
+    "submodules.roles.desc": "Control de acceso",
+    "submodules.empresa": "Datos de Empresa",
+    "submodules.empresa.desc": "Información de la empresa",
+
     // Common
     "common.perMonth": "/mes",
     "common.perYear": "/año",
@@ -446,6 +494,54 @@ export const translations = {
     // SubModule Panel
     "submodule.back": "Back",
     "submodule.functions": "Module functions",
+
+    // SubModules - Sales
+    "submodules.facturas": "Invoices",
+    "submodules.facturas.desc": "Create and manage invoices",
+    "submodules.clientes": "Customers",
+    "submodules.clientes.desc": "Customer management",
+    "submodules.cotizaciones": "Quotes",
+    "submodules.cotizaciones.desc": "Create quotes",
+
+    // SubModules - Inventory
+    "submodules.productos": "Products",
+    "submodules.productos.desc": "Product catalog",
+    "submodules.movimientos": "Movements",
+    "submodules.movimientos.desc": "Entries and exits",
+    "submodules.almacenes": "Warehouses",
+    "submodules.almacenes.desc": "Warehouse management",
+
+    // SubModules - Accounting
+    "submodules.libro-diario": "Journal",
+    "submodules.libro-diario.desc": "Accounting records",
+    "submodules.cuentas": "Chart of Accounts",
+    "submodules.cuentas.desc": "Account catalog",
+    "submodules.reportes": "Reports",
+    "submodules.reportes.desc": "Financial reports",
+
+    // SubModules - HR
+    "submodules.empleados": "Employees",
+    "submodules.empleados.desc": "Employee directory",
+    "submodules.nomina": "Payroll",
+    "submodules.nomina.desc": "Payroll management",
+    "submodules.asistencia": "Attendance",
+    "submodules.asistencia.desc": "Attendance control",
+
+    // SubModules - Purchases
+    "submodules.proveedores": "Suppliers",
+    "submodules.proveedores.desc": "Supplier management",
+    "submodules.ordenes": "Purchase Orders",
+    "submodules.ordenes.desc": "Create purchase orders",
+    "submodules.recepciones": "Receipts",
+    "submodules.recepciones.desc": "Goods reception",
+
+    // SubModules - Settings
+    "submodules.usuarios": "Users",
+    "submodules.usuarios.desc": "User management",
+    "submodules.roles": "Roles & Permissions",
+    "submodules.roles.desc": "Access control",
+    "submodules.empresa": "Company Data",
+    "submodules.empresa.desc": "Company information",
 
     // Common
     "common.perMonth": "/month",

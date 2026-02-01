@@ -118,7 +118,7 @@ export function FiltersModal({
               onChange={(e) =>
                 setCategoryFilter(e.target.value as ProductCategory | "all")
               }
-              className="block w-full px-4 py-2.5 text-sm text-slate-900 dark:text-white bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500/50"
+              className="block w-full px-4 py-2.5 text-sm text-slate-900 dark:text-white bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500/50 [&>option]:bg-white [&>option]:dark:bg-slate-900 [&>option]:text-slate-900 [&>option]:dark:text-white"
             >
               <option value="all">{t("search.allCategories")}</option>
               {productCategories.map((cat) => (
@@ -137,7 +137,7 @@ export function FiltersModal({
             <select
               value={minRatingFilter}
               onChange={(e) => setMinRatingFilter(Number(e.target.value))}
-              className="block w-full px-4 py-2.5 text-sm text-slate-900 dark:text-white bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500/50"
+              className="block w-full px-4 py-2.5 text-sm text-slate-900 dark:text-white bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500/50 [&>option]:bg-white [&>option]:dark:bg-slate-900 [&>option]:text-slate-900 [&>option]:dark:text-white"
             >
               <option value={0}>{t("search.anyRating")}</option>
               <option value={4.5}>4.5+ {t("search.stars")}</option>
@@ -154,7 +154,7 @@ export function FiltersModal({
             <select
               value={maxDeliveryFilter}
               onChange={(e) => setMaxDeliveryFilter(Number(e.target.value))}
-              className="block w-full px-4 py-2.5 text-sm text-slate-900 dark:text-white bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500/50"
+              className="block w-full px-4 py-2.5 text-sm text-slate-900 dark:text-white bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500/50 [&>option]:bg-white [&>option]:dark:bg-slate-900 [&>option]:text-slate-900 [&>option]:dark:text-white"
             >
               <option value={0}>{t("search.anyDelivery")}</option>
               <option value={1}>1 {t("search.days")}</option>
